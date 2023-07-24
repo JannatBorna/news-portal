@@ -45,8 +45,8 @@ HomePage.getLayout = function getLayout(page) {
 // data fatching
 //export const getStaticProps = async () => {
 export const getServerSideProps = async () => {
-  //  const res = await fetch("http://localhost:3000/news");
-  const res = await fetch("http://localhost:3000/api/news");
+  //const res = await fetch("http://localhost:2000/news"); // nextjs and redux
+  const res = await fetch("http://localhost:3000/api/news"); // mongodb
   const data = await res.json();
   // console.log(data);
   return {
