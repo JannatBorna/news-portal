@@ -41,7 +41,6 @@ HomePage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 
-
 // data fatching
 //export const getStaticProps = async () => {
 export const getServerSideProps = async () => {
